@@ -2,7 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import addons from '@storybook/addons';
 
-const basename = path => path.split('/').slice(-1)[0];
+const basename = path => {
+  const pathCopy = path.replace(/\\/g, '/');
+  return pathCopy.split('/').slice(-1)[0];
+};
 
 const findTestResults = (testFiles, jestTestResults, jestTestFilesExt) =>
   testFiles.map(name => {
