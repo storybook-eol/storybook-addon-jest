@@ -3,3 +3,5 @@ node_modules
 dist
 .jest-test-results.json
 build
+
+coverage

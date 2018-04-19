@@ -13,6 +13,7 @@ setOptions({
 function loadStories() {
   require('../foo/index.story');
   require('../list/index.story');
+  require('../MyComponent.story');
 }
 
 configure(loadStories, module);

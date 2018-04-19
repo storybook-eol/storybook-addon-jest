@@ -1,17 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import addons from '@storybook/addons';
+import { normalize } from 'upath'
 
-const basename = path => path.split('/').slice(-1)[0];
-
-const findTestResults = (testFiles, jestTestResults, jestTestFilesExt) =>
+const findTestResults = (testFiles, jestTestResults, jestTestFilesOptions) =>
   testFiles.map(name => {
-    const fileName = name + jestTestFilesExt;
+    const fileName = `${name}${jestTestFilesOptions.filesExt}`;
     if (jestTestResults && jestTestResults.testResults) {
       return {
         fileName,
         name,
-        result: jestTestResults.testResults.find(t => basename(t.name) === fileName),
+        result: jestTestResults.testResults.find(t => normalize(t.name).includes(fileName)),
       };
     }
     return { fileName, name };
@@ -23,7 +20,7 @@ const withTests = (results, options) => (...testFiles) => {
     addons.getChannel().emit('storybook/tests/add_tests', {
       kind,
       storyName: story,
-      tests: findTestResults(testFiles, results, options.filesExt),
+      tests: findTestResults(testFiles, results, options),
     });
   };
 
