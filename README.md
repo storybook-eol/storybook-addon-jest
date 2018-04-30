@@ -2,9 +2,9 @@
 
 Brings Jest results in storybook.
 
-[![Storybook Jest Addon Demo](storybook-addon-jest.gif)](https://renaudtertrais.github.io/storybook-addon-jest)
+[![Storybook Jest Addon Demo](storybook-addon-jest.gif)](https://storybooks.github.io/storybook-addon-jest)
 
-> Checkout the above [Live Storybook](https://renaudtertrais.github.io/storybook-addon-jest).
+> Checkout the above [Live Storybook](https://storybooks.github.io/storybook-addon-jest).
 
 ## Getting started
 
