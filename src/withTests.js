@@ -31,4 +31,3 @@ const withTests = (results, options) => (...testFiles) => {
 }
 
 export default withTests;
-
