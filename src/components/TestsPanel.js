@@ -105,7 +105,7 @@ const TestsPanel = ({ tests }) => {
               </div>
             </h2>
             <ul style={{ listStyle: 'none', fontSize: 14 }}>
-              {result.assertionResults.map(({ fullName, status, failureMessages }) => {
+              {result.assertionResults.map(({ fullName, status, failureMessages, title }) => {
                 const color = status === 'passed' ? colors.success : colors.error;
                 return (
                   <li key={fullName}>
@@ -118,7 +118,7 @@ const TestsPanel = ({ tests }) => {
                     >
                       <div style={{ display: 'flex', alignItems: 'center' }}>
                         <Indicator color={color} size={10} />
-                        <div>{fullName}</div>
+                        <div>{fullName || title}</div>
                       </div>
                       <div style={{ display: 'flex', alignItems: 'center' }}>
                         <Indicator color={color} size={14} right>
