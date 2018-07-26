@@ -2,7 +2,7 @@
 
 Brings Jest results in storybook.
 
-[![Storybook Jest Addon Demo](storybook-addon-jest.gif)](https://storybooks.github.io/storybook-addon-jest)
+[![Storybook Jest Addon Demo](storybook-addon-jest.gif)](https://storybooks.github.io/storybook-addon-jest) [![Greenkeeper badge](https://badges.greenkeeper.io/storybooks/storybook-addon-jest.svg)](https://greenkeeper.io/)
 
 > Checkout the above [Live Storybook](https://storybooks.github.io/storybook-addon-jest).
 
