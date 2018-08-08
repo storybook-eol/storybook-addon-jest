@@ -3,3 +3,6 @@ node_modules
 dist
 .jest-test-results.json
 build
+package-lock.json
+
+coverage

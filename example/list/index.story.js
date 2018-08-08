@@ -2,11 +2,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import withTests from './withTests';
-import List from './List';
+import withTests from '../withTests';
+import List from './index';
 
 storiesOf('List', module)
-  .addDecorator(withTests('List'))
+  .addDecorator(withTests('list/index'))
   .add('3 items', () => (
     <List items={['foo', 'bar']} />
   ));

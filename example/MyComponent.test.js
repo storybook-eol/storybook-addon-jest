@@ -7,7 +7,3 @@ describe('Description: ', () => {
     expect(true).toBe(true);
   });
 });
-
-test('Failing test',() => {
-  expect(['foo', 'bar', 'baz']).toEqual(['foo', 'bar']);
-})

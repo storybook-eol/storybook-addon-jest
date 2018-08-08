@@ -11,7 +11,9 @@ setOptions({
 });
 
 function loadStories() {
-  require('../List.story');
+  require('../foo/index.story');
+  require('../list/index.story');
+  require('../MyComponent.story');
 }
 
 configure(loadStories, module);
